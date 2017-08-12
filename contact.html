@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+		<head>
+			<meta charset="utf-8">
+			<title>Contacto</title>
+		</head>
+
+		<body>
+
+			<form method="POST" action="enviar.php">
+			<!--etiqueta label puede no estar-->	
+			 	<label for="nombre">Nombre: </label>
+			 	<!--etiqueta imput los atributos son type para tipo de texto, id el dni del nombre -->
+				<input type="text" name="nombre" placeholder="Escribí tu nombre" required>
+				<br>
+				<label for="correo">Email</label>
+				<input type="Email" name="correo" placeholder="Escribí tu correo" required>	
+				<br>
+				<label for="edad">Edad</label>
+				<!--atributo min es para que no sea negativo-->
+				<input type="number" name="edad" min="0" placeholder="Ingresar edad">
+				<br>
+				<label for="fecha">Fecha de nacimiento</label>
+				<input type="date" name="fecha">
+				<br>
+				<label for="provincia">Provincia</label>
+				<select name="provincia">
+					<option value="BA">Buenos Aires</option>
+					<option value="ER">Entre Rios</option>
+					<option value="SF">Santa Fe</option>
+				</select>
+				<br>
+				<input type="checkbox" required name="tyc"> 
+				<label>Acepto los terminos y condiciones</label>
+  				<br>
+  				<input type="radio" name="gender" value="Enviemos"> Enviar<br>
+  				<input type="radio" name="gender" value="Retirar"> Retirar<br>
+  				<textarea rows="4"	cols="50"></textarea><br>
+  				<input type="submit" value="Enviar">
+			</form>
+
+
+		</body>
+</html>
